@@ -1,0 +1,11 @@
+This solution is to disable the automatic repair from starting if your computer fails to boot into windows.
+What you will need - A Windows 8 or 8.1 CD
+Step 1: Place the CD in your drive and proceed to boot from it
+Step 2: When the install screen pops up, look to the bottom left and select "Repair Your Computer".
+Step 3: You will now see a screen that says "Choose an option". Select "Troubleshoot", then "Advanced Options", and finally "Command Prompt".
+Step 4: You should now see the command prompt. Type "bcdedit" (without quotes) and hit enter.
+Step 5: A list should have appeared. Towards the top, you should see "resumeobject" (It is under "default"). Highlight the long number, including the brackets, and copy.
+Step 6: Now type "bcdedit /set (the long number you copied) recoveryenabled No" (Without quotes). Hit enter.
+Step 7: You should now see the message "The operation completed successfully"
+Step 8: Type "Exit" (Without quotes)
+Step 9: Reboot
