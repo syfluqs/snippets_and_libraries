@@ -1,5 +1,16 @@
 #include <vector>
 
+void printVector(vector<int> a) {
+    if (a.empty())
+        return;
+    int i=0;
+    for (i=0;i<a.size()-1;i++) {
+        cout << a[i] << ", ";
+    }
+    cout << a[i] << endl;
+    return;
+}
+
 std::vector<char> v;
 
 /*
