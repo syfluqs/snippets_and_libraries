@@ -1,1 +1,1 @@
-typedef long long name;
+typedef long long ll;
