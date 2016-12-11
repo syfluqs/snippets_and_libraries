@@ -30,6 +30,7 @@ based on deque implementation
 
 
 Member Functions
+
 (constructor)     Construct stack (public member function )
 empty             Test whether container is empty (public member function )
 size              Return size (public member function )
