@@ -1,0 +1,3 @@
+Difference between *a+i and *(a+i)
+* has a precedence greater than +
+
