@@ -19,6 +19,7 @@ void insertionSort(int ar_size, int *  ar) {
         int a = ar[i];
         int j;
         for (j=i-1;j>=0 && ar[j]>a;j--) {
+            //shifting forward
             ar[j+1]=ar[j];
         } 
         ar[j+1] = a;
