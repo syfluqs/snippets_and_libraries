@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+/*
+%  - percent relative to another value, typically an enclosing element
+pt - 1/72 of an inch
+px - absolute unit
+em - relative to the font-size of their own element
+rem - relative to font-size of the root element
+ex - This value defines a measurement relative to a font's x-
+height. The x-height is determined by the height of the font's lowercase letter x.
+
+vh - 1% of viewport height
+vw - 1% of viewport width
+vim - 1vh or 1vw, whichever is smaller
+ */

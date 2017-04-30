@@ -1,0 +1,43 @@
+Taken from http://stackoverflow.com/a/10426566
+
+Absolute CSS Positioning
+
+position: absolute;
+
+Absolute positioning is the easiest to understand. You start with the CSS position property:
+
+position: absolute;
+This tells the browser that whatever is going to be positioned should be removed from the normal flow of the document and will be placed in an exact location on the page. It won't affect how the elements before it or after it in the HTML are positioned on the Web page however it will be subject to it's parents' positioning unless you override it.
+
+If you want to position an element 10 pixels from the top of the document window, you would use the "top" offset to position it there with absolute positioning:
+
+position: absolute;
+top: 10px;
+This element will then always display 10px from the top of the page regardless of what content passes through, under or over the element (visually).
+
+The four positioning properties are:
+
+top
+right
+bottom
+left
+To use them, you need to think of them as offset properties. In other words, an element positioned right 2px is not moved right 2px. It's right side is offset from the right side of the window 2px. The same is true for the other three.
+
+Relative Positioning
+
+position: relative;
+
+Relative positioning uses the same four positioning properties as absolute positioning. But instead of basing the position of the element upon the browser view port, it starts from where the element would be if it were still in the normal flow.
+
+For example, if you have three paragraphs on your Web page, and the third has a position: relative style placed on it, its position will be offset based on its current location-- not from the original sides of the view port.
+
+Paragraph 1.
+
+Paragraph 2.
+
+Paragraph 3.
+In the above example, the third paragraph will be positioned 3em from the left side of the container element, but will still be below the first two paragraphs. It would remain in the normal flow of the document, and just be offset slightly. If you changed it to position: absolute; anything following it would display on top of it, because it would no longer be in the normal flow of the document.
+Notes:
+
+the default width of an element that is absolutely positioned is the width of the content within it, unlike an element that is relatively positioned where it's default width is 100% of the space it can fill.
+You can have elements that overlap with absolutely positioned elements, whereas you cannot do this with relatively positioned elements (natively i.e without the use of negative margins/positioning)
