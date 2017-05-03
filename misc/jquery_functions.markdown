@@ -68,3 +68,31 @@ Move the selected element to the element provided.
 $("#my-button").appendTo("#my-id");
 ```
 If a class is provided, then a new instance of the class will be created and the selector will be plced inside it (?)
+
+#### .clone()
+Makes a copy (only object, no actual copying) of the selector element. 
+A function chain can be made to actually copy the element to a second location, like this
+```
+$("#my-button").clone().appendTo("#my-id");
+```
+
+#### .parent()
+Returns the parent element of the selected element.
+
+#### .children()
+Returns all children of the selected element.
+
+#### :nth-child selector 
+This is not a jQuery component, but a useful tool nonetheless.
+This is used to select the elements which are nth child of their parent. So
+```
+$("#my-id:nth-child(2)").clone();
+```
+will make a clone of the 2nd child of ```#my-id```s parent, if it exists.
+
+The nth child selector can also take inputs like ```odd``` and ```even```, and formulas like ```3n+2```. The formula should always be in the format ```an+b```, where ```a``` represents cycle size and ```b``` represents offst.
+
+The ```even``` and ```odd``` are separate selectors in themselves.
+```
+$(#child:even).clone();
+```
