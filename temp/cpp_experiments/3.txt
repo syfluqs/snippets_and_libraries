@@ -1,0 +1,10 @@
+#define CAT(a, ...) PRIMITIVE_CAT(a, __VA_ARGS__)
+#define PRIMITIVE_CAT(a, ...) a ## __VA_ARGS__
+#define A(t) t
+#define IIF(cond, c) CAT(IIF_, cond, c)
+#define IIF_0 zero
+#define IIF_1 one
+
+IIF(1,1)
+IIF(0,0)
+IIF(A(1),A(0))

@@ -1,0 +1,7 @@
+/* Macro recursion */
+
+#define M1(t) M2(t)
+#define M2(t) M3(t)
+#define M3(t) M2(t)
+
+M1(2)

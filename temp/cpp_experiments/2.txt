@@ -1,0 +1,7 @@
+#define A(t) t
+
+#define IIF(cond) IIF_ ## cond
+#define IIF_0 zero
+#define IIF_1 one
+
+IIF(A(1))
